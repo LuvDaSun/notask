@@ -1,0 +1,18 @@
+#!/usr/bin/node
+
+/* jshint node: true */
+
+var notask = require('./main');
+var nopt = require('nopt');
+var when = require('when');
+
+var options = nopt();
+var tasks = options.argv.remain;
+
+when.all(tasks.map(notask.run)).done(function() {
+    console.log("OK");
+}, function(err) {
+    throw err;
+});
+
+

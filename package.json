@@ -1,0 +1,20 @@
+{
+  "name": "notask",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "notask": "./src/notask"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "when": "~3.6.3",
+    "glob": "~4.2.1",
+    "extend": "~2.0.0",
+    "nopt": "~3.0.1"
+  }
+}
