@@ -7,31 +7,31 @@ Simple task runner for node
 
 Install notask via npm, preferably globally.
 
-  sudo npm install notask -g
+    sudo npm install notask -g
 
 ## Usage
 
 Make some tasks
-
-  //one.task.js
-  module.exports.task = function() {
-    return 'one';
-  };
   
-  //two.task.js
-  module.exports.task = function() {
-    return 'two';
-  };
-
-  //echo.task.js
-  module.exports.task = function(one, two) {
-    return one + '? '  + two + '!';
-  };
+    //one.task.js
+    module.exports.task = function() {
+      return 'one';
+    };
+    
+    //two.task.js
+    module.exports.task = function() {
+      return 'two';
+    };
   
+    //echo.task.js
+    module.exports.task = function(one, two) {
+      return one + '? '  + two + '!';
+    };
+    
   
 Now run that task!
 
-  notask echo
+    notask echo
 
 
 ## Wowie
