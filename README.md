@@ -3,11 +3,13 @@ notask
 
 Simple task runner for node
 
+
 ## Install
 
 Install notask via npm, preferably globally.
 
     sudo npm install notask -g
+
 
 ## Usage
 
@@ -25,7 +27,7 @@ Make some tasks
   
     //echo.task.js
     module.exports.task = function(one, two) {
-      return one + '? '  + two + '!';
+      return one + '? ' + two + '!';
     };
     
   
@@ -43,5 +45,3 @@ name as each function parameter, then resolve that task and return the result as
 arguments.
 
 
-
-  
